@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col" *ngFor="let pelicula of listadoRecibido">
+      <img
+        src="{{ pelicula.fotoDeLaPelicula }}"
+        style="width: 180px; display:box;"
+        alt="foto de la pelicula"/>
+      <button  class="btn btn-outline-light"  style="margin: 40px 20px auto auto" (click)="PasarPelicula(pelicula)">Ir a detalle</button>
+    </div>
+  </div>
+
+  <!--li *ngFor="let pelicula of listadoRecibido">
+    <img src="{{ pelicula.fotoDeLaPelicula }}" style="width: 150px; display: flex; flex-wrap: wrap" alt="foto de la pelicula"/>
+    <button class="btn btn-primary" (click)="PasarPelicula(pelicula)">ir a detalle</button>
+   </li-->
